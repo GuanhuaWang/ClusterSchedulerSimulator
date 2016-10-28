@@ -7,4 +7,4 @@ We designed `Random Taks Queue Generator` with *varied* task processing time (es
 
 We developed `FIFO` (First In First Out) task scheduler with RoundRobin task choise among all the active jobs.
 
-We developed `SRTF` (Shortest Remaining Time First) task scheduler, which achieves pretty good JCT.
+We developed `SRTF` (Shortest Remaining Time First) task scheduler, which achieves pretty good JCT. It is worth noting that this `SRTF` is *NOT* preemptive scheduled.
