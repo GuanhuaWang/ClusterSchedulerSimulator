@@ -751,6 +751,7 @@ def generate_values(n):
         values.append(value)
         n -= value
     return np.asarray(values)           
+
 '''           
 job1 = np.zeros(20)
 job2 = np.zeros(20)
