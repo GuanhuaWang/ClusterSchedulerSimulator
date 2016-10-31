@@ -715,6 +715,7 @@ def SJF(J1,J2,J3,num):
                     worker[5][i+n] = c3_job    
                 
     np.savetxt('SJF.csv', worker, delimiter=',')
+    print worker
     #find when Job 1 finishes
     flag1=0
     x = 0
@@ -747,11 +748,10 @@ def SJF(J1,J2,J3,num):
 def generate_values(n):
     values = []
     while n > 0:
-        value = rd.randint(1, n)
+        value = rd.randint(1, n%10+6)
         values.append(value)
         n -= value
     return np.asarray(values)           
-
 '''           
 job1 = np.zeros(20)
 job2 = np.zeros(20)
@@ -768,9 +768,15 @@ queue, queue_job = scheduler (job1,job2,job3)
 q = [1,2,3,4,5,6,7,8,9]
 q_job = [1,2,3,1,2,3,1,2,3]
 ''' 
-job1 = generate_values(26)
-job2 = generate_values(26)
-job3 = generate_values(26)
+job1 = generate_values(15)
+job2 = generate_values(20)
+job3 = generate_values(20)
+print "========Tasks of Job 1========"
+print job1
+print "========Tasks of Job 2========"
+print job2
+print "========Tasks of Job 3========"
+print job3
 print "========FIFO Scheduling========"
 #FIFO(queue,queue_job,3)
 print "========Shortest First Scheduling========"
