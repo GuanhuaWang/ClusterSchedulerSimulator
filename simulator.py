@@ -301,7 +301,6 @@ def SJF(J1,J2,J3,num):
                         worker[0][i+j] = c1
                         worker[1][i+j] = c1_job                    
             elif((J3_remain==min(J1_remain,J2_remain,J3_remain) or (J3_remain==min(J2_remain,J3_remain) and J1_remain<=0) or (J3_remain==min(J1_remain,J3_remain) and J2_remain<=0) or (J1_remain<=0 and J2_remain<=0)) and J3_remain>0):
-            #elif((J2_remain==min(J1_remain,J2_remain,J3_remain) or (J2_remain==min(J2_remain,J3_remain) and J1_remain<=0) or (J2_remain==min(J1_remain,J2_remain) and J3_remain<=0) or (J1_remain<=0 and J3_remain<=0)) and J2_remain>0):
                 if(J3_f+3<J3_num):
                     c1 = int(J3[J3_f])
                     c1_job = int(3)
