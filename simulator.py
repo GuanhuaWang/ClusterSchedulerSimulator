@@ -301,6 +301,7 @@ def SJF(J1,J2,J3,num):
                         worker[0][i+j] = c1
                         worker[1][i+j] = c1_job                    
             elif((J3_remain==min(J1_remain,J2_remain,J3_remain) or (J3_remain==min(J2_remain,J3_remain) and J1_remain<=0) or (J3_remain==min(J1_remain,J3_remain) and J2_remain<=0) or (J1_remain<=0 and J2_remain<=0)) and J3_remain>0):
+            #elif((J2_remain==min(J1_remain,J2_remain,J3_remain) or (J2_remain==min(J2_remain,J3_remain) and J1_remain<=0) or (J2_remain==min(J1_remain,J2_remain) and J3_remain<=0) or (J1_remain<=0 and J3_remain<=0)) and J2_remain>0):
                 if(J3_f+3<J3_num):
                     c1 = int(J3[J3_f])
                     c1_job = int(3)
@@ -747,7 +748,7 @@ def SJF(J1,J2,J3,num):
 def generate_values(n):
     values = []
     while n > 0:
-        value = rd.randint(1, n%10+6)
+        value = rd.randint(1, n%3+4)
         values.append(value)
         n -= value
     return np.asarray(values)           
@@ -767,9 +768,12 @@ queue, queue_job = scheduler (job1,job2,job3)
 q = [1,2,3,4,5,6,7,8,9]
 q_job = [1,2,3,1,2,3,1,2,3]
 ''' 
-job1 = generate_values(15)
-job2 = generate_values(20)
-job3 = generate_values(20)
+#job1 = generate_values(10)
+#job2 = generate_values(10)
+#job3 = generate_values(10)
+job1=[7,7,7]
+job2=[0,1,1,2]
+job3=[0,0,1,1]
 print "========Tasks of Job 1========"
 print job1
 print "========Tasks of Job 2========"
