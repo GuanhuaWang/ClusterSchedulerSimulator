@@ -1,5 +1,6 @@
 # Cluster Scheduler Simulator (CSS)
 [![Build Status](https://travis-ci.org/GuanhuaWang/ClusterSchedulerSimulator.svg?branch=master)](https://travis-ci.org/GuanhuaWang/ClusterSchedulerSimulator)
+[![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
 Cluster Scheduler Simulator (CSS) is a cluster scheduling simulator used for design new scheduling alogrithm in big data analytics cluster.
 ## Current stage
