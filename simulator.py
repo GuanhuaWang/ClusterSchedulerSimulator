@@ -752,7 +752,7 @@ def generate_values(n):
         values.append(value)
         n -= value
     return np.asarray(values)           
-'''           
+           
 job1 = np.zeros(20)
 job2 = np.zeros(20)
 job3 = np.zeros(20)
@@ -767,13 +767,13 @@ for i in range (0,20):
 queue, queue_job = scheduler (job1,job2,job3)
 q = [1,2,3,4,5,6,7,8,9]
 q_job = [1,2,3,1,2,3,1,2,3]
-''' 
+
 #job1 = generate_values(10)
 #job2 = generate_values(10)
 #job3 = generate_values(10)
-job1=[7,7,7]
-job2=[0,1,1,2]
-job3=[0,0,1,1]
+#job1=[7,7,7]
+#job2=[0,1,1,2]
+#job3=[0,0,1,1]
 print "========Tasks of Job 1========"
 print job1
 print "========Tasks of Job 2========"
@@ -781,8 +781,8 @@ print job2
 print "========Tasks of Job 3========"
 print job3
 print "========FIFO Scheduling========"
-#FIFO(queue,queue_job,3)
+FIFO(queue,queue_job,3)
 print "========Shortest First Scheduling========"
-SJF(job1,job2,job3,3)
+#SJF(job1,job2,job3,3)
 
 
