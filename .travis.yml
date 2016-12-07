@@ -15,5 +15,5 @@ install:
   #- pip install .
   #- pip install -r requirements.txt
 # command to run tests
-# still dont know how to use it
+# still not easy know how to use it
 script: python simulator.py

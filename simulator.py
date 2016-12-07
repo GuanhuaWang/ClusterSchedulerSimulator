@@ -758,11 +758,11 @@ job2 = np.zeros(20)
 job3 = np.zeros(20)
 
 for i in range (0,20):
-    job1[i] =rd.randint(1,9)
+    job1[i] =rd.randint(1,15)
 for i in range (0,20):
-    job2[i] =rd.randint(1,9)
+    job2[i] =rd.randint(1,15)
 for i in range (0,20):
-    job3[i] =rd.randint(1,9)
+    job3[i] =rd.randint(1,15)
     
 queue, queue_job = scheduler (job1,job2,job3)
 q = [1,2,3,4,5,6,7,8,9]
