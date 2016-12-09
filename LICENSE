@@ -8,8 +8,8 @@ All other contributions:
 Copyright (c) 2014, 2015, the respective contributors
 All rights reserved.
 
-Caffe uses a shared copyright model: each contributor holds copyright over
-their contributions to Caffe. The project versioning records all such
+ClusterSchedulerSimulator uses a shared copyright model: each contributor holds copyright over
+their contributions to ClusterSchedulerSimulator. The project versioning records all such
 contribution and copyright details. If a contributor wants to further mark
 their specific copyright on a particular contribution, they should indicate
 their copyright solely in the commit message of the change when it is
@@ -39,6 +39,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 CONTRIBUTION AGREEMENT
 
-By contributing to the BVLC/caffe repository through pull-request, comment,
+By contributing to the ClusterSchedulerSimulator repository through pull-request, comment,
 or otherwise, the contributor releases their content to the
 license and copyright terms herein.
